@@ -25,6 +25,7 @@ export const MovieList = styled.div`
   height: 850px;
   overflow-y: auto;
   padding-right: 10px;
+  border-radius: 15px;
 
   ::-webkit-scrollbar {
     width: 10px;
