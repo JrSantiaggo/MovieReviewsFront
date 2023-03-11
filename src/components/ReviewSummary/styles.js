@@ -30,7 +30,8 @@ export const Stars = styled.div`
   margin-top: 12px;
 
   > svg {
-    width: 12px;
+    width: 14px;
+    color: ${({theme}) => theme.COLORS.CALL};
   }
 
 `;

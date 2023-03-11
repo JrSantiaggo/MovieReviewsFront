@@ -22,7 +22,7 @@ export const NewMovie = styled.div`
 export const MovieList = styled.div`
   margin: 60px auto 0;
   max-width: 1300px;
-  height: 850px;
+  height: 650px;
   overflow-y: auto;
   padding-right: 10px;
   border-radius: 15px;
