@@ -16,6 +16,13 @@ export const Inputs = styled.div`
   height: 783px;
   padding: 10px;
   gap: 20px;
+
+  h2 {
+    color: ${({theme}) => theme.COLORS.TEXT};
+    font-size: 20px;
+    font-weight: 400;
+  }
+
 `;
 
 export const TwoInput = styled.div`
@@ -25,4 +32,16 @@ export const TwoInput = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+`;
+
+export const Marcadores = styled.div`
+  width: 100%;
+  height: 88px;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  background: ${({theme}) => theme.COLORS.BLACK};
+  
 `;

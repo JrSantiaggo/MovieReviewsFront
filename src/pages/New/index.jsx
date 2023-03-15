@@ -1,8 +1,9 @@
-import { Container, Inputs, TwoInput } from "./styles";
+import { Container, Inputs, TwoInput, Marcadores } from "./styles";
 import { Header } from "../../components/Header";
 import { ButtonText } from "../../components/ButtonText";
 import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
+import { AddTag } from "../../components/AddTag";
 import { AiOutlineArrowLeft } from "react-icons/ai"
 
 export function New(){
@@ -22,10 +23,14 @@ export function New(){
 
         <TextArea placeholder="observações" />
 
-      </Inputs>
+        <h2>Marcadores</h2>
 
-      
-      
+        <Marcadores>
+          <AddTag value="React" />
+          <AddTag isNew placeholder="Novo Marcador" />         
+        </Marcadores>
+
+      </Inputs>
 
 
     </Container>
