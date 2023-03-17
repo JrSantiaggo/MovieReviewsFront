@@ -1,10 +1,11 @@
-import { Container, Inputs, TwoInput, Marcadores } from "./styles";
+import { Container, Inputs, TwoItems, Marcadores } from "./styles";
 import { Header } from "../../components/Header";
 import { ButtonText } from "../../components/ButtonText";
+import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
 import { AddTag } from "../../components/AddTag";
-import { AiOutlineArrowLeft } from "react-icons/ai"
+import { AiOutlineArrowLeft, AiOutlineDelete, AiOutlineSave } from "react-icons/ai"
 
 export function New(){
   return(
@@ -16,10 +17,10 @@ export function New(){
 
         <h1>Novo filme</h1>
 
-        <TwoInput>
+        <TwoItems>
           <Input placeholder="Titulo" />
           <Input placeholder="Sua nota(de 0 a 5)" />
-        </TwoInput>
+        </TwoItems>
 
         <TextArea placeholder="observações" />
 
@@ -29,6 +30,11 @@ export function New(){
           <AddTag value="React" />
           <AddTag isNew placeholder="Novo Marcador" />         
         </Marcadores>
+
+        <TwoItems>
+          <Button icon={AiOutlineDelete} title="Exluir filme" model="secondary"  />
+          <Button icon={AiOutlineSave} title="Salvar alterações" />
+        </TwoItems>
 
       </Inputs>
 

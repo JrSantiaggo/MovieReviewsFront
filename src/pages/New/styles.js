@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Inputs = styled.div`
-  margin: 60px auto 0;
+  margin: 30px auto 0;
   width: 950px;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ export const Inputs = styled.div`
 
 `;
 
-export const TwoInput = styled.div`
+export const TwoItems = styled.div`
   width: 100%;
   margin: 10px auto 0;
   display: flex;

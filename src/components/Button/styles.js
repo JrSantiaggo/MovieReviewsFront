@@ -5,10 +5,10 @@ export const Container = styled.button`
   height: 48px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 22px;
-  background-color: ${({theme}) => theme.COLORS.CALL};
-  color: ${({theme}) => theme.COLORS.BLACK};
+  background-color: ${({theme, model}) => model == "primary" ? theme.COLORS.CALL : theme.COLORS.BLACK};
+  color: ${({theme, model}) => model == "primary"? theme.COLORS.BLACK : theme.COLORS.CALL };
   border-radius: 10px;
   border: none;
 

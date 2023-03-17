@@ -16,6 +16,7 @@ export const Container = styled.div`
     color: ${({theme}) => theme.COLORS.CALL};
     font-size: 24px;
     font-weight: 700;
+    cursor: pointer;
   } 
 `;
 
