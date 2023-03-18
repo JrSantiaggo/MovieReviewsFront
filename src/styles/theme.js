@@ -8,6 +8,7 @@ export default {
     CALL: "#FF859B",
     WHITE: "#F4EDE8",
     GRAY: "#948F99",
+    GRAY_300: "#312E38",
     BLACK: "#0D0C0F",
     TEXT: "#999591"
     

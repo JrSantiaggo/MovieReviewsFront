@@ -5,7 +5,6 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 22px;
   color: ${({theme}) => theme.COLORS.CALL};
   background: transparent;
   border: none;

@@ -31,6 +31,7 @@ export const Stars = styled.div`
 
   > svg {
     width: 14px;
+    height: 14px;
     color: ${({theme}) => theme.COLORS.CALL};
   }
 
