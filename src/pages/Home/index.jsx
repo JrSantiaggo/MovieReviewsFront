@@ -3,6 +3,7 @@ import { Container, NewMovie, MovieList } from "./styles"
 import {AiOutlinePlus} from "react-icons/ai";
 import { Button } from "../../components/Button";
 import { ReviewSummary } from "../../components/ReviewSummary";
+import { Link } from "react-router-dom";
 
 export function Home(){
   return(
@@ -11,7 +12,10 @@ export function Home(){
 
       <NewMovie>
         <h1>Meus Filmes</h1>
-        <Button title="Adicionar filme" icon={AiOutlinePlus} />
+        <Link to="/new">
+          <Button title="Adicionar filme" icon={AiOutlinePlus} />
+        </Link>
+        
       </NewMovie>
 
       <MovieList>

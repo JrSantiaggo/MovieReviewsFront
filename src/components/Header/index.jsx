@@ -1,6 +1,7 @@
 import { Container, Profile, Search } from "./styles";
 import { Input } from "../Input"
 import { FiPlus, FiSearch } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export function Header(){
   return(
@@ -13,9 +14,12 @@ export function Header(){
       <Profile>
         <div>
           <h2>Lourival Junior</h2>
-          <a href="#">sair</a>
+          <Link to="/" > Sair </Link>
         </div>
-        <img src="http://github.com/jrsantiaggo.png" alt="Imagem de perfil" />
+        <Link to="/profile">
+          <img src="http://github.com/jrsantiaggo.png" alt="Imagem de perfil" />
+        </Link>
+        
       </Profile>
 
     </Container>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Container = styled.div`
+export const Container = styled(Link)`
   width: 100%;
   height: 242px;
   display: flex;
@@ -11,6 +12,7 @@ export const Container = styled.div`
   margin-top: 20px;
   border-radius: 15px;
   background-color: ${({theme}) => theme.COLORS.BACKGROUND_SECONDARY};
+  cursor: pointer;
 
   h1 {
     font-size: 24px;

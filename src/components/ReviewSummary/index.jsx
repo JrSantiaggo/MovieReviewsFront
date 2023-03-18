@@ -4,7 +4,7 @@ import { Tag } from "../Tag";
 
 export function ReviewSummary({data, ...rest}){
   return(
-    <Container>
+    <Container to="/details" >
       <h1> {data.title} </h1>
       <Stars>
         <AiFillStar/>

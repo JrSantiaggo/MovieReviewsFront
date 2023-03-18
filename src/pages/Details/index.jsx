@@ -5,13 +5,17 @@ import { MovieTitle } from "../../components/MovieTitle";
 import { AuthorDetails } from "../../components/AuthorDetails";
 import { Tag } from "../../components/Tag";
 import { AiOutlineArrowLeft } from "react-icons/ai"
+import { Link } from "react-router-dom";
 
 export function Details(){
   return(
     <Container>
       <Header />
       <main>
-        <ButtonText title="Voltar" icon={AiOutlineArrowLeft} />
+        <Link to="/">
+          <ButtonText title="Voltar" icon={AiOutlineArrowLeft} />
+        </Link>
+        
 
         <MovieTitle title="Interestelar" />
 

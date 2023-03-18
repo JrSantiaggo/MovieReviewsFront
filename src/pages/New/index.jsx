@@ -6,6 +6,7 @@ import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
 import { AddTag } from "../../components/AddTag";
 import { AiOutlineArrowLeft, AiOutlineDelete, AiOutlineSave } from "react-icons/ai"
+import { Link } from "react-router-dom";
 
 export function New(){
   return(
@@ -13,7 +14,10 @@ export function New(){
       <Header />
       
       <Inputs>
+        <Link to="/">
         <ButtonText title="Voltar" icon={AiOutlineArrowLeft} />
+        </Link>
+        
 
         <h1>Novo filme</h1>
 
